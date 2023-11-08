@@ -4,7 +4,7 @@ Based on https://github.com/rschlaikjer/w5500/tree/master
 ### Example
 ```C#
 var eth_driver = new W5500Driver();
-eth_driver.Init(sck: 18, miso: 19, mosi: 19, cs: 4);
+eth_driver.Init(sck: 18, miso: 19, mosi: 23, cs: 4);
 eth_driver.Reset();
 eth_driver.SetPhyMode(W5500CommonEnums.PhyOperationMode.BASE100_FULL_DUPLEX);
 eth_driver.SetMac(new byte[] { 0x01, 0x01, 0x01, 0x06, 0x06, 0x06});
