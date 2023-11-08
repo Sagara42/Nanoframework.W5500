@@ -1,7 +1,7 @@
-#nanoframework esp32 W5500 module Driver
+# nanoframework esp32 W5500 module Driver
 Currently works only TCP socket in client mode
 Based on https://github.com/rschlaikjer/w5500/tree/master
-###Example
+### Example
 ```C#
 var eth_driver = new W5500Driver();
 eth_driver.Init(sck: 18, miso: 19, mosi: 19, cs: 4);
